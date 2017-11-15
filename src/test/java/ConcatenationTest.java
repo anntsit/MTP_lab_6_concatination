@@ -7,37 +7,37 @@ import concatenation.*;
 import java.io.IOException;
 
 public class ConcatenationTest {
-    private ConcatenationWithHashSet concatenation;
+    private ConcatenationWithHashSet concat;
 
     @Before
     public void init() throws Exception {
-        concatenation = new ConcatenationWithHashSet();
-        concatenation.getWordsFromFile("test.txt");
-        concatenation.findConcatenatedWords();
+        concat = new ConcatenationWithHashSet();
+        concat.getWordsFromFile("test.txt");
+        concat.findConcatenatedWords();
     }
 
     @Test
     public void findConcatenatedWordsTrieTest() throws IOException {
         String check = "ratcatdogcat";
-        assertEquals(concatenation.concatenatedWords.get(0), check);
+        assertEquals(concat.concatenatedWords.get(0), check);
     }
 
 
     @Test
     public void getFirstLongestConcatenatedWordTest() {
         String check = "ratcatdogcat";
-        assertEquals(concatenation.getFirstLongestConcatenatedWord(), check);
+        assertEquals(concat.getFirstLongestConcatenatedWord(), check);
     }
 
     @Test
     public void getSecondLongestConcatenatedWordTest() {
         String check = "catsdogcats";
-        assertEquals(concatenation.getSecondLongestConcatenatedWord(), check);
+        assertEquals(concat.getSecondLongestConcatenatedWord(), check);
     }
 
     @Test
     public void getNumberOfConcatenatedWordsTest() {
         int check = 3;
-        assertEquals(concatenation.getNumberOfConcatenatedWords(), check);
+        assertEquals(concat.getNumberOfConcatenatedWords(), check);
     }
 }
