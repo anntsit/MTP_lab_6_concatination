@@ -11,3 +11,7 @@
 <a class="badge-align" href="https://www.codacy.com/app/anntsit/MTP_lab_6_concatination?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anntsit/MTP_lab_6_concatination&amp;utm_campaign=Badge_Grade" title="Codacy">
     <img src="https://api.codacy.com/project/badge/Grade/05342be952874202afe6ee2a34d9428f"/>
 </a>
+
+<a class="badge-align" href="https://www.codacy.com/app/anntsit/MTP_lab_6_concatination?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=anntsit/MTP_lab_6_concatination&amp;utm_campaign=Badge_Coverage"  title="Coverage">
+    <img src="https://api.codacy.com/project/badge/Coverage/05342be952874202afe6ee2a34d9428f"/>
+</a>
