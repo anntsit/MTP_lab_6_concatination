@@ -37,12 +37,13 @@ public class ConcatenatedWords {
         return concatenatedWords.size();
     }
 
-    public void getAllInfo(){
+    public boolean getAllInfo(){
         System.out.println("The first longest concatenated word is " +
                 this.getFirstLongestConcatenatedWord());
         System.out.println("The second longest concatenated word is " +
                 this.getSecondLongestConcatenatedWord());
         System.out.println("The number of concatenated words is " +
                 this.getNumberOfConcatenatedWords());
+        return true;
     }
 }

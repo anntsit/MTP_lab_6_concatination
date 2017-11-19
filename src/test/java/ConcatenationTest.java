@@ -40,4 +40,14 @@ public class ConcatenationTest {
         int check = 3;
         assertEquals(concat.getNumberOfConcatenatedWords(), check);
     }
+
+    @Test
+    public void getAllInfo(){
+        assertEquals(true, concat.getAllInfo());
+    }
+
+    @Test
+    public void getWordsFromFile() {
+        assertEquals(true, concat.getWordsFromFile("test.txt"));
+    }
 }

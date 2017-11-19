@@ -14,14 +14,16 @@ public class ConcatenationWithHashSet extends ConcatenatedWords{
         hashSet = new HashSet<>();
     }
 
-    public void getWordsFromFile(String path){
+    public boolean getWordsFromFile(String path){
+        boolean isValid = false;
         try (Stream<String> stream = Files.lines(Paths.get(path))) {
             stream.forEach(word -> {
                 hashSet.add(word);
-            });
+            });isValid = true;
         } catch (IOException e) {
             System.out.println("Problem occurred while reading your file : " + e);
         }
+        return isValid;
     }
 
     /**
