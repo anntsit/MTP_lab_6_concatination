@@ -50,4 +50,9 @@ public class ConcatenationTest {
     public void getWordsFromFile() {
         assertEquals(true, concat.getWordsFromFile("test.txt"));
     }
+
+    @Test
+    public void getWordsFromFileInvalid() {
+        assertEquals(false, concat.getWordsFromFile("nofile.txt"));
+    }
 }
